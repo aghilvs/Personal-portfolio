@@ -53,7 +53,7 @@ section {
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgba(151,228,38,0.849);
+    background-color: rgba(131, 74, 71, 0.849);
 }
 .sec2{
     display: none;
@@ -74,6 +74,9 @@ section {
     display: none;
     transform: translateY(0) scale(1);
     background-color: rgb(205, 140, 90);
+}
+.active {
+    display:block;
 }
 .controlls {
     position: fixed;
