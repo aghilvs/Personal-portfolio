@@ -60,37 +60,41 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgba(131, 74, 71, 0.849);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(151, 205, 90);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(157, 90, 205);
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(205, 140, 90);
 }
 
 .active {
   display: block;
+  animation: scaleAnim 1s ease-in-out;
 }
 
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(-100% scale(0));
+  }
+}
 .controlls {
   position: fixed;
   z-index: 10;
@@ -126,4 +130,27 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*Header Content*/
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-content .left-header .h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 65%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/*Independent Components*//*# sourceMappingURL=styles.css.map */
