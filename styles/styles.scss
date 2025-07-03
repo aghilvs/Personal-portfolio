@@ -165,6 +165,10 @@ section {
 }
 
 /*Independent Components*/
+.btn-con {
+    display: flex;
+    align-self: flex-start;
+}
 .main-btn {
     border-radius: 30px;
     color: inherit;
