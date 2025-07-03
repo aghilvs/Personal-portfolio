@@ -241,24 +241,39 @@ section {
         border-radius: 50%;
         padding: 1rem;
     }
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     transform: translateX(100%);
+    //     transition: all .4s ease-out;
+    //     z-index: -1;
+    // }
+    // &:hover{
+    //     transition: all .4s ease-out;
+    //     &::before{
+    //         width: 100%;
+    //         height: 100%;
+    //         background-color: var(--color-secondary);
+    //         transform: translateX(0);
+    //         transition: all .4s ease-out;
+    //     }
+    // }
     &::before {
         content: '';
         position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-secondary);
         top: 0;
         right: 0;
         transform: translateX(100%);
         transition: all .4s ease-out;
         z-index: -1;
     }
-    &:hover{
-        transition: all .4s ease-out;
-        &::before{
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-secondary);
-            transform: translateX(0);
-            transition: all .4s ease-out;
-        }
+    &:hover::before {
+        transform: translateX(0%);
     }
 }
 .main-title {
