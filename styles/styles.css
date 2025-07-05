@@ -89,10 +89,10 @@ section {
 
 @keyframes scaleAnim {
   0% {
-    transform: translateY(-100%) scale(0);
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateY(-100% scale(0));
+    transform: translateY(0%);
   }
 }
 .controlls {
@@ -172,6 +172,12 @@ section {
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
+}
+.header-content .right-header {
+  padding-top: 20%;
+  padding-left: 10%;
+  padding-right: 20%;
+  text-align: justify;
 }
 
 /*About*/
