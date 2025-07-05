@@ -379,6 +379,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
+  position: relative;
 }
 .portfolios .portfolio-item {
   position: relative;
@@ -390,7 +391,7 @@ section {
      object-fit: contain;
   border-radius: 15px;
 }
-.portfolios .portfolio-item .hover-items {
+.portfolios .hover-items {
   width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
@@ -403,17 +404,17 @@ section {
   align-items: center;
   flex-direction: column;
 }
-.portfolios .portfolio-item .hover-items h3 {
+.portfolios .hover-items h3 {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
-.portfolios .portfolio-item .hover-items .icons {
+.portfolios .hover-items .icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.portfolios .portfolio-item .hover-items .icons .icon {
+.portfolios .hover-items .icons .icon {
   background-color: var(--color-primary);
   border-radius: 50%;
   width: 50px;
@@ -425,15 +426,15 @@ section {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.portfolios .portfolio-item .hover-items .icons .icon i {
+.portfolios .hover-items .icons .icon i {
   font-size: 1.5rem;
   color: var(--color-white);
   margin: 0 1 rem;
 }
-.portfolios .portfolio-item .hover-items .icons .icon:hover {
+.portfolios .hover-items .icons .icon:hover {
   background-color: var(--color-white);
 }
-.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+.portfolios .hover-items .icons .icon:hover i {
   color: var(--color-primary);
 }
 
