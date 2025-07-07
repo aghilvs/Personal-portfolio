@@ -702,4 +702,10 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 4.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
