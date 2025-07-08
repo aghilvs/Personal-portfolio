@@ -707,8 +707,13 @@ section {
 
 /* Extra small devices (phones, <576px) */
 @media screen and (max-width: 575.98px) {
-  section {
-    margin: 5rem 10rem;
+  .main-title h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .main-title h2 .bg-text {
+    font-weight: 600;
+    font-size: 3.2rem;
   }
   .controlls {
     position: fixed;
@@ -730,6 +735,21 @@ section {
   }
   .header-content .left-header {
     padding: 0 20px;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .left-about {
+    padding-bottom: 10px;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  .timeline {
+    grid-template-columns: 1fr;
   }
 }
 /* Small devices (phones, ≥576px) */

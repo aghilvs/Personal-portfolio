@@ -1,46 +1,82 @@
-// @media screen and (max-width: 600px) {
-//     header{
-//         padding: 0;
-//     }
-// }
 
 /* Extra small devices (phones, <576px) */
 @media screen and (max-width: 575.98px) {
-//Section
-section{
-    margin:5rem 10rem;
-}
-//Controls
-.controlls {
-    position: fixed;
-    z-index: 10;
-    top: auto;
-    bottom: 1%;
-    left: 13%;
-    display: flex;
-    flex-direction: row;
-    height: 4vh;
+    .main-title {
+    // text-align: center;
+    h2{
+        // position: relative;
+        // text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 400;
+        // span{
+        //     color: var(--color-secondary);
+        // }
+        .bg-text{
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // color: var(--color-grey-4);
+            // transition: all 0.4s ease-in-out;
+            // z-index: -1;
+            // transform: translate(-50%, -50%);
+            font-weight: 600;
+            font-size: 3.2rem;
+        }
     }
-    .control {
 }
-//HEADER
-header{
-    overflow-y: auto;
-    padding-bottom: 10vh;
-}
-.header-content {
-    display: grid;
+    //Section
+    // section{
+    //     // margin:5rem 10rem;
+    // }
+    //Controls
+    .controlls {
+        position: fixed;
+        z-index: 10;
+        top: auto;
+        bottom: 1%;
+        left: 13%;
+        display: flex;
+        flex-direction: row;
+        height: 4vh;
+        }
+        .control {
+    }
+    //HEADER
+    header{
+        overflow-y: auto;
+        padding-bottom: 10vh;
+    }
+    .header-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        .left-header {
+            padding: 0 20px;
+        }
+        .right-header{
+        }
+    }
+
+    //ABOUT
+    .about-container{
     grid-template-columns: 1fr;
-    .left-header {
-        padding: 0 20px;
+        .left-about{
+            padding-bottom: 10px;
+        }
+        .right-about{
+            grid-template-columns: 1fr;
+        }
     }
-    .right-header{
-        // padding-top: 20%;
-        // padding-left: 10%;
-        // padding-right: 20%;
-        // text-align: justify;
+    .about-stats{
+    // padding-bottom: 4rem;
+        .progress-bars{
+            // display: grid;
+            grid-template-columns: 1fr;
+        }   
     }
-}
+    .timeline{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 /* Small devices (phones, ≥576px) */
