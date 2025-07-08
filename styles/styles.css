@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -704,8 +705,34 @@ section {
   font-size: 4.2rem;
 }
 
-@media screen and (max-width: 600px) {
-  header {
-    padding: 0;
+/* Extra small devices (phones, <576px) */
+@media screen and (max-width: 575.98px) {
+  section {
+    margin: 5rem 10rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+  .controlls {
+    position: fixed;
+    z-index: 10;
+    top: auto;
+    bottom: 1%;
+    left: 13%;
+    display: flex;
+    flex-direction: row;
+    height: 4vh;
+  }
+  header {
+    overflow-y: auto;
+    padding-bottom: 10vh;
+  }
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .header-content .left-header {
+    padding: 0 20px;
+  }
+}
+/* Small devices (phones, ≥576px) */
+/* Medium devices (tablets, ≥768px) */
+/* Large devices (desktops, ≥992px) */
+/* Extra large devices (large desktops, ≥1200px) *//*# sourceMappingURL=styles.css.map */
