@@ -707,6 +707,10 @@ section {
 
 /* Extra small devices (phones, <576px) */
 @media screen and (max-width: 575.98px) {
+  .main-title {
+    text-align: center;
+    padding-bottom: 20px;
+  }
   .main-title h2 {
     font-size: 2rem;
     font-weight: 400;
@@ -720,7 +724,8 @@ section {
     z-index: 10;
     top: auto;
     bottom: 1%;
-    left: 13%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: row;
     height: 4vh;
@@ -736,11 +741,22 @@ section {
   .header-content .left-header {
     padding: 0 20px;
   }
+  .sec3, .sec2, .sec4, .sec5 {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
   .about-container {
     grid-template-columns: 1fr;
   }
   .about-container .left-about {
+    padding-right: 0px;
     padding-bottom: 10px;
+  }
+  .about-container .left-about p {
+    text-align: justify;
+  }
+  .about-container .left-about h4 {
+    text-align: center;
   }
   .about-container .right-about {
     grid-template-columns: 1fr;
@@ -749,6 +765,15 @@ section {
     grid-template-columns: 1fr;
   }
   .timeline {
+    grid-template-columns: 1fr;
+  }
+  .portfolios {
+    grid-template-columns: 1fr;
+  }
+  .sec3 {
+    padding-bottom: 10vh;
+  }
+  .blogs {
     grid-template-columns: 1fr;
   }
 }
