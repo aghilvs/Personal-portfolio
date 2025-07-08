@@ -770,10 +770,14 @@ section {
   .portfolios {
     grid-template-columns: 1fr;
   }
-  .sec3 {
+  .sec3, .sec4, .sec5 {
     padding-bottom: 10vh;
   }
   .blogs {
+    grid-template-columns: 1fr;
+  }
+  .contact-content-container {
+    display: grid;
     grid-template-columns: 1fr;
   }
 }

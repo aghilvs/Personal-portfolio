@@ -83,14 +83,20 @@
     // display: grid;
     grid-template-columns: 1fr;
     }
-    .sec3{
+    .sec3, .sec4, .sec5{
         padding-bottom: 10vh;
     }
 
     //BLOGS
     .blogs{
     grid-template-columns: 1fr;
-}
+    }
+
+    //CONTACT CONTENT CONTAINER
+    .contact-content-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Small devices (phones, ≥576px) */
