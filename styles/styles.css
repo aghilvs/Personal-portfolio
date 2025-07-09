@@ -780,6 +780,12 @@ section {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .contact-content-container .left-contact p {
+    text-align: justify;
+  }
+  .contact-content-container .right-contact {
+    margin-left: 0px;
+  }
 }
 /* Small devices (phones, ≥576px) */
 /* Medium devices (tablets, ≥768px) */
