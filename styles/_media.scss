@@ -110,13 +110,146 @@
 
 /* Small devices (phones, ≥576px) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    //Main Title
+        .main-title {
+    text-align: center;
+    padding-bottom: 20px;
+    h2{
+        font-size: 2rem;
+        font-weight: 400;
+        .bg-text{
+            font-weight: 600;
+            font-size: 3.2rem;
+        }
+    }
+    }
 
+    //Controls
+    .controlls {
+        position: fixed;
+        z-index: 10;
+        top: auto;
+        bottom: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        height: 4vh;
+        }
+        .control {
+            // padding: 3px;
+        }
+    //HEADER
+    header{
+        overflow-y: auto;
+        padding-bottom: 10vh;
+    }
+    .header-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        .left-header {
+            padding: 0 20px;
+        }
+        .right-header{
+        }
+    }
+
+    //ABOUT
+    .sec3, .sec2, .sec4, .sec5{
+        padding-left: 10vh;
+        padding-right: 10vh;
+    }
+
+    .about-container{
+    grid-template-columns: 1fr;
+
+        .left-about{
+            padding-right: 0px;
+            padding-bottom: 10px;
+            p{
+                text-align: justify;
+            }
+            h4{
+                text-align: center;
+            }
+
+        }
+        .right-about{
+            grid-template-columns: 1fr;
+        }
+    }
+    .about-stats{
+    // padding-bottom: 4rem;
+        .progress-bars{
+            // display: grid;
+            grid-template-columns: 1fr;
+        }   
+    }
+    .timeline{
+        grid-template-columns: 1fr;
+    }
+
+    //PORTFOLIOS
+    .portfolios{
+    // display: grid;
+    grid-template-columns: 1fr;
+    }
+    .sec3, .sec4, .sec5{
+        padding-bottom: 10vh;
+    }
+
+    //BLOGS
+    .blogs{
+    grid-template-columns: 1fr;
+    }
+
+    //CONTACT CONTENT CONTAINER
+    .contact-content-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        .left-contact{
+            p{
+                text-align: justify;
+            }
+        }
+        .right-contact{
+            margin-left: 0px;
+        }
+    }
 
  }
 
 /* Medium devices (tablets, ≥768px) */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        //HEADER
+    .header-content{
+        .right-header{
+        padding-top: 20%;
+        padding-left: 5%;
+        padding-right: 25%;
+        text-align: justify;
+        }
+    }
 
+    //ABOUT SECTION
+    .about-container{
+        grid-template-columns: 1fr;
+        //Left About
+        .left-about{
+
+        }
+    }
+    .sec2{
+        // left: 50%;
+        // transform: translateX(-50%);
+        padding-left: 15vh;
+        .about-stats{
+            .stat-title, .progress-bars{
+                
+            }
+
+        }
+    }
  }
 
 /* Large devices (desktops, ≥992px) */

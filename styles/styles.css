@@ -788,6 +788,101 @@ section {
   }
 }
 /* Small devices (phones, ≥576px) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .main-title {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .main-title h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .main-title h2 .bg-text {
+    font-weight: 600;
+    font-size: 3.2rem;
+  }
+  .controlls {
+    position: fixed;
+    z-index: 10;
+    top: auto;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    height: 4vh;
+  }
+  header {
+    overflow-y: auto;
+    padding-bottom: 10vh;
+  }
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .header-content .left-header {
+    padding: 0 20px;
+  }
+  .sec3, .sec2, .sec4, .sec5 {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .left-about {
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+  .about-container .left-about p {
+    text-align: justify;
+  }
+  .about-container .left-about h4 {
+    text-align: center;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+  .portfolios {
+    grid-template-columns: 1fr;
+  }
+  .sec3, .sec4, .sec5 {
+    padding-bottom: 10vh;
+  }
+  .blogs {
+    grid-template-columns: 1fr;
+  }
+  .contact-content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contact-content-container .left-contact p {
+    text-align: justify;
+  }
+  .contact-content-container .right-contact {
+    margin-left: 0px;
+  }
+}
 /* Medium devices (tablets, ≥768px) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .header-content .right-header {
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 25%;
+    text-align: justify;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .sec2 {
+    padding-left: 15vh;
+  }
+}
 /* Large devices (desktops, ≥992px) */
 /* Extra large devices (large desktops, ≥1200px) *//*# sourceMappingURL=styles.css.map */
