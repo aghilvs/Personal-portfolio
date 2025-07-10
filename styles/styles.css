@@ -871,6 +871,10 @@ section {
 }
 /* Medium devices (tablets, ≥768px) */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .sec3, .sec2, .sec4, .sec5 {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
   .header-content .right-header {
     padding-top: 20%;
     padding-left: 5%;
@@ -880,9 +884,33 @@ section {
   .about-container {
     grid-template-columns: 1fr;
   }
+  .about-container .left-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-container .left-about h4 {
+    font-size: 1.8rem;
+  }
+  .about-container .right-about {
+    padding-top: 20px;
+  }
   .sec2 {
     padding-left: 15vh;
   }
 }
 /* Large devices (desktops, ≥992px) */
-/* Extra large devices (large desktops, ≥1200px) *//*# sourceMappingURL=styles.css.map */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .sec3, .sec2, .sec4, .sec5 {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+}
+/* Extra large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) {
+  .sec3, .sec2, .sec4, .sec5 {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+}/*# sourceMappingURL=styles.css.map */
